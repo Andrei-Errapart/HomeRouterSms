@@ -1,0 +1,14 @@
+Sisselogimise URL: /index/login.cgi HTTP/1.1\r\n
+
+(
+Host. 192.168.1.1\r\n
+Content-Type oli: application/x-www-form-urlencoded
+võtab vastu eesti ja inglise keelt
+Full request URI: http://192.168.1.1/index/login.cgi
+
+POST-i sisu(parameetrid)
+Line-based text-data: application/x-www-form-urlencoded
+Username=admin&Password=tJPUflI96L0GKyuQWrS5f4iHUM2kcP5o52DApmxLCFs%2F5uHvG2itewAPI%2FicXpuJRpNJK2e6PAUKY2OnLH0Clpi9bm0MVIK4LAcjSbWneG1M0i%2B2M4jrCLol0baW6s1RsRg361%2FbvFD981qCV2%2Bha7ZXySXI%2FcJIUAnTzuKrAWo%3D
+
+Response in frame 1100: 200 OK
+(Status Code on 200 ja Response Phrase OK)

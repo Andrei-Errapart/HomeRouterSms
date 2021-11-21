@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Test</title>
+<script type="text/javascript" src="loadbyver.js?ver=V200R001C1143SP051"></script>
+<script language="JavaScript" type="text/javascript">
+loadJs("util.js");
+loadJs("jquery-1.4.4.js");
+loadJs("log4javascript_lite.js");
+loadJs("jquery.qtip.js");
+loadJs("main.js");
+loadJs("jsbn.js");
+loadJs("prng4.js");
+loadJs("rng.js");
+loadJs("rsa.js");
+loadJs("base64.js");
+loadJs("index.js");
+</script>
+</head>
+<body>
+
+<div>Algne tekst on: <span id="algne">xxx</span></div>
+<div>Krüpteeritud tekst on: <span id="krypto">yyy</span></div>
+<button type="button" onclick="myFunction()">Proovi</button>
+<script>
+
+function myFunction() {
+	document.getElementById("algne").innerHTML='Loksa10Sms';
+	//alert(lala("nono"));
+	//alert(MyRSAEncryptB64("Loksa9Sms"));
+	document.getElementById("krypto").innerHTML = MyRSAEncryptB64("Loksa10Sms");
+	//document.getElementById("krypto").value=RSAEncrypt(document.getElementById("algne").innerHTML);
+	//return true;
+	var lantype = "en_us";
+	var date = new Date();
+	date.setTime(date.getTime()+(365*24*60*60*1000));
+	var expires = "; expires="+date.toGMTString();
+	alert(expires);
+	var cookie = "Language="+lantype+ expires + "; path=/";
+	alert(cookie);
+
+}
+
+</script>
+</body>
+</html>
